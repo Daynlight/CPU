@@ -19,15 +19,17 @@
 A. R -> D !!
 B.
 C.
-D. NULL
-E. STOP
-F. SLEEP
+D. 
+E. Null
+F. Stop
 -----------------------------------------OPIS---------------------------------
 0. OP - Register - Data
 1. OP - R - M(location)
 2. OP - R - M(location)
 3. OP - R - null
 4. OP - ALU OP - null
+e. OP - OP - OP
+f. OP - NULL - NULL
 -----------------------------------------------ALU----------------------------
 0. A
 1. not A
