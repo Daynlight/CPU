@@ -9,7 +9,7 @@
 0. D -> R
 1. R -> M
 2. M -> R
-3. R -> D
+3. R -> D !!
 4. ALU
 5. GET
 6. OUT
