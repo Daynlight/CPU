@@ -9,14 +9,14 @@
 0. D -> R
 1. R -> M
 2. M -> R
-3. R -> D !!
+3. JMP
 4. ALU
 5. GET
 6. OUT
 7. ADC
 8. DAC
 9. IF
-A. JMP
+A. R -> D !!
 B.
 C.
 D. NULL
@@ -26,6 +26,7 @@ F. SLEEP
 0. OP - Register - Data
 1. OP - R - M(location)
 2. OP - R - M(location)
+3. OP - R - null
 4. OP - ALU OP - null
 -----------------------------------------------ALU----------------------------
 0. A
