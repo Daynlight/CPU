@@ -15,8 +15,8 @@
 6. OUT
 7. R -> R
 8. IF
-9. R -> D !!!
-A. 
+9. R -> ROM
+A. ROM -> R
 B.
 C.
 D. 
