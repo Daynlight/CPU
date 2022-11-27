@@ -13,10 +13,10 @@
 4. ALU
 5. GET
 6. OUT
-7. ADC
-8. DAC
-9. IF
-A. R -> D !!
+7. R -> D !!
+8. IF
+9. 
+A. 
 B.
 C.
 D. 
