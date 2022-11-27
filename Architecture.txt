@@ -13,9 +13,9 @@
 4. ALU
 5. GET
 6. OUT
-7. R -> D !!
+7. R -> R
 8. IF
-9. 
+9. R -> D !!!
 A. 
 B.
 C.
@@ -28,6 +28,9 @@ F. Stop
 2. OP - R - M(location)
 3. OP - R - null
 4. OP - ALU OP - null
+5. OP - R - Null
+6. OP - R - Null
+
 e. OP - OP - OP
 f. OP - NULL - NULL
 -----------------------------------------------ALU----------------------------
