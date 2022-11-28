@@ -29,6 +29,7 @@ F. Stop
 4. OP - null - null
 5. OP - R - Null
 6. OP - R - Null
+7. OP - R(z) - R(do)
 
 e. OP - Register - Data
 f. OP - NULL - NULL
