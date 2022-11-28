@@ -745,7 +745,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="4" loc="(880,150)" name="ROM">
       <a name="contents">addr/data: 8 8
-e 2 56 e 4 1 1 2
+5 1 0 6 1 0 e 0
 0 3 0 0 6 3 0 e
 0 0 3
 </a>
