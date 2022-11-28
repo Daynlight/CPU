@@ -3,10 +3,9 @@
 * 8 bit
 * 16 op
 * 4 Register
-* 1 and 2 OP Register
-* Register 0 temp
+* Register 5 RAM location
 ---------------------------------------------OP--------------------------------
-0. D -> R
+0. NULL
 1. R -> M
 2. M -> R
 3. JMP
@@ -20,20 +19,26 @@ A. ROM -> R
 B.
 C.
 D. 
-E. Null
+E. D -> R
 F. Stop
 -----------------------------------------OPIS---------------------------------
-0. OP - Register - Data
+0. OP - OP - OP
 1. OP - R - M(location)
 2. OP - R - M(location)
 3. OP - R - null
-4. OP - ALU OP - null
+4. OP - null - null
 5. OP - R - Null
 6. OP - R - Null
+7. OP - R(z) - R(do)
 
-e. OP - OP - OP
+e. OP - Register - Data
 f. OP - NULL - NULL
 -----------------------------------------------ALU----------------------------
+* 1 and 2 OP Register
+* alu op register 0
+* R 4 resoult
+
+-----------------------------------------------ALU OP----------------------------
 0. A
 1. not A
 2. AND
