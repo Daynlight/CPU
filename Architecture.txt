@@ -1,0 +1,82 @@
+--------------------------------------------Informacje-------------------------
+* RISC
+* 8 bit
+* 16 op
+* 4 Register
+* Register 5 RAM location
+---------------------------------------------OP--------------------------------
+0. NULL
+1. R -> M
+2. M -> R
+3. JMP
+4. ALU
+5. GET
+6. OUT
+7. R -> R
+8. IF
+9. R -> ROM
+A. ROM -> R
+B.
+C.
+D. 
+E. D -> R
+F. Stop
+
+-----------------------------------------OPIS---------------------------------
+0. OP - OP - OP
+1. OP - R - M(location)
+2. OP - R - M(location)
+3. OP - R - null
+4. OP - null - null
+5. OP - R - Null
+6. OP - R - Null
+7. OP - R(z) - R(do)
+
+e. OP - Register - Data
+f. OP - NULL - NULL
+-----------------------------------------------ALU----------------------------
+* 1 and 2 OP Register
+* alu op register 0
+* R 4 resoult
+
+-----------------------------------------------ALU OP----------------------------
+0. A
+1. not A
+2. AND
+3. OR
+4. XOR
+5. NAND
+6. NOR
+7. ff
+8. 00
+9. ADD
+A. Sub
+B. Mult
+C. Devider
+D.
+F.
+----------------------------------Asambler funkcje----------------------------
+* pri ""-> wypisz ciąg znaków do w ""
+* out "R"-> wypisz z rejestru
+* var (R) "" -> Ustaw rejsetr na ""
+* prr (R) "R" -> z rejestru do rejestru
+* sme "R" -> Set to memory
+* gme "R" -> get from memory
+* get "R" -> Get from keybord
+* jmp "R" -> jump to
+* jpp "" -> jmp to ""
+* alu ""{
+	A
+	noA
+	AND
+	OR
+	XOr
+	Nad
+	NOR
+	ff
+	00
+	add
+	sub
+	mult
+	Dev
+}
