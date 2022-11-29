@@ -1,0 +1,26 @@
+pri "Dodaj"
+nel
+pri "A:"
+get (1)
+var (4) "1"
+sme (1)
+nel
+pri "B:"
+get (1)
+var (4) "2"
+var (2) "30"
+var (0) "a"
+alu
+sme (3)
+var (0) "9"
+var (4) "1"
+gme (1)
+var (4) "2"
+gme (2)
+alu
+nel
+pri "Wynik dodawania to: "
+out (3)
+nel
+var (0) "24"
+jmp (0)

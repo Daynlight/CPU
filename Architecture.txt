@@ -4,6 +4,7 @@
 * 16 op
 * 4 Register
 * Register 5 RAM location
+r in 16 bit
 ---------------------------------------------OP--------------------------------
 0. NULL
 1. R -> M
@@ -18,7 +19,7 @@
 A. ROM -> R
 B.
 C.
-D. 
+D. End bios and start use ROM
 E. D -> R
 F. Stop
 
@@ -58,15 +59,14 @@ F.
 ----------------------------------Asambler funkcje----------------------------
 - pri ""-> wypisz ciąg znaków do w ""
 - nel -> go to next line
-* var (R) "" -> Ustaw rejsetr na ""
-* prr (R) "R" -> z rejestru do rejestru
-* out "R"-> wypisz z rejestru
-* sme "R" -> Set to memory
-* gme "R" -> get from memory
-* get "R" -> Get from keybord
-* jmp "R" -> jump to
-* jpp "" -> jmp to ""
-* alu ""{
+- var (R) "" -> Ustaw rejsetr na ""
+- prr (R źru) (R cel) -> z rejestru do rejestru
+- out (R)-> wypisz z (rejestru)
+- get (R) -> Get from keybord
+- sme (R) -> Set data from (Register) to memory location = R4
+- gme (R) -> get from memory to (Register) location = R4
+- jmp (R) -> jump to (z rejestru)
+- alu ""{
 	A
 	noA
 	AND
