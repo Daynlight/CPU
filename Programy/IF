@@ -1,0 +1,9 @@
+pri "Wprowadzi"
+get (1)
+var (2) "31"
+var (3) "1"
+com
+var (0) "54"
+jmp (0)
+nel
+pri "A"

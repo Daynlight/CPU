@@ -4,7 +4,10 @@
 * 16 op
 * 4 Register
 * Register 5 RAM location
-r in 16 bit
+*r in 16 bit
+* compare from R1 and R2 Zasada from R3
+* Compare 0 > , 1 = , 2 <
+* jmp need compare data 1
 ---------------------------------------------OP--------------------------------
 0. NULL
 1. R -> M
@@ -14,10 +17,10 @@ r in 16 bit
 5. GET
 6. OUT
 7. R -> R
-8. IF
+8. ROM -> R
 9. R -> ROM
-A. ROM -> R
-B.
+A. 
+B. Compare
 C.
 D. End bios and start use ROM
 E. D -> R
@@ -32,6 +35,8 @@ F. Stop
 5. OP - R - Null
 6. OP - R - Null
 7. OP - R(z) - R(do)
+
+B. OP - Null - Null
 
 e. OP - Register - Data
 f. OP - NULL - NULL
@@ -55,6 +60,7 @@ A. Sub
 B. Mult
 C. Devider
 D.
+E.
 F.
 ----------------------------------Asambler funkcje----------------------------
 - pri ""-> wypisz ciąg znaków do w ""
@@ -81,3 +87,4 @@ F.
 	mult
 	Dev
 }
+-com -> Ustawienie 1 umożliwia wykonanie skoku a 0 nie
