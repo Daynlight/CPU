@@ -8,6 +8,7 @@
 * compare from R1 and R2 Zasada from R3
 * Compare 0 > , 1 = , 2 <
 * jmp need compare data 1
+* jmp to disk need set location
 ---------------------------------------------OP--------------------------------
 0. NULL
 1. R -> B
@@ -30,15 +31,16 @@ F. Stop
 0. OP - OP - OP
 1. OP - R - M(location)
 2. OP - R - M(location)
-3. OP - R - null
+3. OP - R - R3
 4. OP - null - null
 5. OP - R - Null
 6. OP - R - Null
 7. OP - R(z) - R(do)
 
-B. OP - Null - Null
+b. OP - Null - Null
 
-e. OP - Register - Data
+d. OP - Register - null
+e. OP - Register - null
 f. OP - NULL - NULL
 -----------------------------------------------ALU----------------------------
 * 1 and 2 OP Register
@@ -71,7 +73,6 @@ F.
 - get (R) -> Get from keybord
 - sme (R) -> Set data from (Register) to memory location = R4
 - gme (R) -> get from memory to (Register) location = R4
-- jmp (R) -> jump to (z rejestru)
 - alu ""{
 	A
 	noA
@@ -88,3 +89,7 @@ F.
 	Dev
 }
 -com -> Ustawienie 1 umożliwia wykonanie skoku a 0 nie
+* jmp to disck
+* jmp (R) -> jump to (z rejestru) Register3 = disck to jump
+
+
