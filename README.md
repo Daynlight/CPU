@@ -14,3 +14,20 @@
 * wai -> Wait for keyboard input.
 * dsc (<kbd>Register</kbd>) -> Jump to Disk in Register. **Need set location for disk before jump**.
 * sav -> Save Data to Disk. **Location = Register 1, Data = Register 2, Disk = Register 3**.
+## ALU
+0. A
+1. not A
+2. AND
+3. OR
+4. XOR
+5. NAND
+6. NOR
+7. ff
+8. 00
+9. ADD
+10. Sub
+11. Mult
+12. Devider
+13. Random
+14.
+15.
