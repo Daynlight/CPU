@@ -9,6 +9,8 @@
 * Compare 0 > , 1 = , 2 <, 3 <=, 4 !=, 5 >=
 * jmp need compare data 1
 * jmp to disk need set location and jump to disk in R
+* Write to ROM R3 = Disck R1 = location-1  R2 = Data
+* Write to only one bit
 ---------------------------------------------OP--------------------------------
 0. NULL
 1. R -> M
@@ -36,7 +38,7 @@ F. Stop
 5. OP - R - Null
 6. OP - R - Null
 7. OP - R(z) - R(do)
-8.
+8. OP
 9.
 a. OP - null - null
 b. OP - Null - Null
@@ -94,5 +96,5 @@ F.
 - jmp to disck
 - jmp (R) -> jump to (z rejestru) Register3 = disck to jump
 - wait
-
+- write
 

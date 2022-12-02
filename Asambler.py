@@ -226,7 +226,21 @@ for L in L:
         f.write(w)
         w=""
         f.close
-
+    if(L[0:3]=="sav"): # only 1 bit - Save on DISK R3 = DISK R2 = DATA R1 = Location
+        ia=0
+        c=["8"]
+        jmpa=jmpa+1
+        while(ia<len(c)):
+            w=w+ str(c[ia])+" "
+            ia=ia+1
+            b=b+1
+            if(b>endline):
+                w=w+"\n"
+                b=1
+        f=open(x+"asm","a")
+        f.write(w)
+        w=""
+        f.close
 
 
 
