@@ -8,7 +8,7 @@
 * compare from R1 and R2 Zasada from R3
 * Compare 0 > , 1 = , 2 <, 3 <=, 4 !=, 5 >=
 * jmp need compare data 1
-* jmp to disk need set location
+* jmp to disk need set location and jump to disk in R
 ---------------------------------------------OP--------------------------------
 0. NULL
 1. R -> M
@@ -91,7 +91,8 @@ F.
 	Dev
 }
 -com -> Ustawienie 1 umożliwia wykonanie skoku a 0 nie
-* jmp to disck
-* jmp (R) -> jump to (z rejestru) Register3 = disck to jump
+- jmp to disck
+- jmp (R) -> jump to (z rejestru) Register3 = disck to jump
+- wait
 
 

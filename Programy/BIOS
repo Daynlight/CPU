@@ -1,0 +1,30 @@
+pri "Wybierz Dysk: "
+wai
+get (1)
+var (2) "31"
+var (3) "4"
+com
+var (0) "72"
+var (3) "0"
+jmp (0)
+out (1)
+dsc (1)
+var (2) "32"
+var (3) "4"
+com
+var (0) "8D"
+var (3) "0"
+jmp (0)
+out (1)
+dsc (1)
+nel
+pri "Nie ma dysku "
+out (1)
+nel
+var (3) "6"
+com
+var (0) "0"
+var (3) "0"
+jmp (0)
+
+ 

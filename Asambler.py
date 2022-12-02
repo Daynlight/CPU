@@ -149,7 +149,7 @@ for L in L:
         f.write(w)
         w=""
         f.close
-    if(L[0:3]=="jmp"): # 1 op - jump to (z rejestru) need 1 from compare
+    if(L[0:3]=="jmp"): # 1 op - jump to (z rejestru) need 1 from compare and disk = R3
         ia=0
         r=L[5]
         c=["3",r,0]
@@ -180,7 +180,7 @@ for L in L:
         f.write(w)
         w=""
         f.close
-    if(L[0:3]=="com"): # 1 op - Compar R1 and R2 if in R3 | 0 > , 1 = , 2 <
+    if(L[0:3]=="com"): # 1 op - Compar R1 and R2 if in R3 | 0 > , 1 = , 2 <, 3 <=, 4 !=, 5 >=, 6 True, 7 False
         ia=0
         c=["b",0,0]
         jmpa=jmpa+3
@@ -195,6 +195,38 @@ for L in L:
         f.write(w)
         w=""
         f.close
+    if(L[0:3]=="wai"): # 1 op - wait to input
+        ia=0
+        c=["a",0,0]
+        jmpa=jmpa+3
+        while(ia<len(c)):
+            w=w+ str(c[ia])+" "
+            ia=ia+1
+            b=b+1
+            if(b>endline):
+                w=w+"\n"
+                b=1
+        f=open(x+"asm","a")
+        f.write(w)
+        w=""
+        f.close
+    if(L[0:3]=="dsc"): # 1 op - jmp to disck from data in (Register)
+        ia=0
+        r=L[5]
+        c=["d",r,0]
+        jmpa=jmpa+3
+        while(ia<len(c)):
+            w=w+ str(c[ia])+" "
+            ia=ia+1
+            b=b+1
+            if(b>endline):
+                w=w+"\n"
+                b=1
+        f=open(x+"asm","a")
+        f.write(w)
+        w=""
+        f.close
+
 
 
 
