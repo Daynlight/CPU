@@ -1,26 +1,26 @@
 --------------------------------------------Informacje-------------------------
 * RISC
-* 8 bit
+* 32 bit
 * 16 op
 * 4 Register
 * Register 5 RAM location
-*r in 16 bit
+* r in 16 bit
 * compare from R1 and R2 Zasada from R3
-* Compare 0 > , 1 = , 2 <
+* Compare 0 > , 1 = , 2 <, 3 <=, 4 !=, 5 >=
 * jmp need compare data 1
 * jmp to disk need set location
 ---------------------------------------------OP--------------------------------
 0. NULL
-1. R -> B
-2. B -> R
+1. R -> M
+2. M -> R
 3. JMP
 4. ALU
 5. GET
 6. OUT
 7. R -> R
-8. ROM -> R
-9. R -> ROM
-A. 
+8. R -> D
+9. 
+A. wait for input
 B. Compare
 C.
 D. jmp to disck
@@ -36,7 +36,9 @@ F. Stop
 5. OP - R - Null
 6. OP - R - Null
 7. OP - R(z) - R(do)
-
+8.
+9.
+a. OP - null - null
 b. OP - Null - Null
 
 d. OP - Register - null
