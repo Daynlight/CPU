@@ -1,4 +1,12 @@
 # CPU In Logisim
+## Informatino
+* RISC
+* 32 bit data
+* 4 bit op
+* Register (0-4)
+* 2 DISKS and 1 BIOS
+* 3 jumps per operation
+* Disk save operation use one data space
 ## Asembler
 * pri "<kbd>text to print in terminal</kbd>" -> Print text.
 * nel -> Go to next line.
@@ -31,3 +39,22 @@
 13. Random
 14.
 15.
+## OP TABLE
+| DESCRIPTION | OP | R | R | More Info|
+| :---- | :----: | :----: | :----: | ----: |
+| NULL | 0 |  |  | Do nothing |
+| R -> M | 1 | R |  | R4 = location on Ram |
+| M -> R | 2 | R |  | R4 = location on Ram |
+| JMP | 3 | R |  | R3 is Disk to where is jumped |
+| ALU | 4 |  |  | OP = Register 0, A = Register 1, B = Register 2, Result = Register 3 |
+| GET | 5 | R |  |  |
+| OUT | 6 | R |  |  |
+| R -> R | 7 | R(from) | R(to) |  |
+| R -> Rom | 8 | X | X | only OP |
+| NULL | 9 |  |  |  |
+| WAIT | A |  |  |  |
+| COMPARE | B |  |  | A = Register 1, B = Register 2, OP = Register 3**. **OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False } |
+| NULL | C |  |  |  |
+| Change Disk | D | R |  |  |
+| D - > R | E | R | D |  |
+| STOP | F |  |  |  |
