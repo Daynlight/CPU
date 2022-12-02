@@ -22,10 +22,10 @@
 7. R -> R
 8. R -> D
 9. 
-A. wait for input
+A. Wait for input
 B. Compare
 C.
-D. jmp to disck
+D. Jmp to disk
 E. D -> R
 F. Stop
 
@@ -65,7 +65,7 @@ f. OP - NULL - NULL
 A. Sub
 B. Mult
 C. Devider
-D.
+D. Random
 E.
 F.
 ----------------------------------Asambler funkcje----------------------------
@@ -77,7 +77,7 @@ F.
 - get (R) -> Get from keybord
 - sme (R) -> Set data from (Register) to memory location = R4
 - gme (R) -> get from memory to (Register) location = R4
-- alu ""{
+- alu{
 	A
 	noA
 	AND
@@ -92,7 +92,7 @@ F.
 	mult
 	Dev
 }
--com -> Ustawienie 1 umożliwia wykonanie skoku a 0 nie
+- com -> Ustawienie 1 umożliwia wykonanie skoku a 0 nie
 - jmp to disck
 - jmp (R) -> jump to (z rejestru) Register3 = disck to jump
 - wait
