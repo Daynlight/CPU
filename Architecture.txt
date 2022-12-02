@@ -23,7 +23,7 @@
 A. 
 B. Compare
 C.
-D. End bios and start use ROM
+D. jmp to disck
 E. D -> R
 F. Stop
 
