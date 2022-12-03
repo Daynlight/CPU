@@ -1,3 +1,4 @@
+
 x=input("File: ")
 f=open(x,'r')
 L=f.readlines()
@@ -261,7 +262,7 @@ for L in L:
     if(L[0:3]=="end"): 
         ia=0
 
-        c=["f","0",""]
+        c=["f","0","0"]
         jmpa=jmpa+1
         while(ia<len(c)):
             w=w+ str(c[ia])+" "
@@ -274,6 +275,11 @@ for L in L:
         f.write(w)
         w=""
         f.close
+
+
+
+
+
 
 print("Wielkość danych = "+str(jmpa))
 
