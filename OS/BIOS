@@ -1,22 +1,40 @@
-var (0) "0"
+var (3) "0"
 var (4) "0"
-sme (0)
+sme (3)
+
 var (3) "7"
 com
-dat (0) (0)
-get (1)
+gme (1)
 var (2) "20"
+var (3) "1"
+com
+var (3) "0"
+
+var (0) "45"
+
+jmp (0)
+var (3) "7"
+com
+var (4) "0"
+gme (2)
+var (1) "0"
 var (3) "4"
 com
 var (3) "0"
-var (0) "FB"
+
+var (0) "1C6"
+
 jmp (0)
-pri "Welcome in Bios"
 nel
-pri "Chose Disk: "
+pri "Welcome in BIOS"
+nel
+pri "Chose Disk to boot: "
 wai
 get (1)
 out (1)
+nel
+pri "Disk set pls reset"
+nel
 var (2) "30"
 var (0) "a"
 alu
@@ -26,32 +44,21 @@ var (3) "0"
 sav
 var (3) "6"
 com
-var (0) "1"
 var (3) "0"
+var (0) "0"
 jmp (0)
-nel
-gme (1)
-var (3) "7"
-com
-var (2) "0"
-var (3) "1"
-com
-var (3) "0"
-var (0) "16D"
-jmp (0)
-pri "Os loading"
+pri "OS loading"
 var (3) "6"
 com
 var (4) "0"
 gme (3)
-var (0) "0"
-jmp (0)
+var (1) "0"
+jmp (1)
+var (4) "0"
+gme (3)
 dsc (3)
-pri "Chose Boot disk"
-nel
 var (3) "6"
 com
 var (3) "0"
-var (0) "1"
-wai
+var (0) "0"
 jmp (0)
