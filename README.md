@@ -6,7 +6,6 @@
 * Register (0-4)
 * 2 DISKS and 1 BIOS
 * 3 jumps per operation
-* Disk save operation use one data space
 ## Asembler
 * pri "<kbd>text to print in terminal</kbd>" -> Print text.
 * nel -> Go to next line.
@@ -52,7 +51,7 @@
 | GET | 5 | R |  |  |
 | OUT | 6 | R |  |  |
 | R -> R | 7 | R(from) | R(to) |  |
-| R -> Rom | 8 | X | X | only OP |
+| R -> Rom | 8 |  |  | |
 | NULL | 9 |  |  |  |
 | WAIT | A |  |  |  |
 | COMPARE | B |  |  | A = Register 1, B = Register 2, OP = Register 3**. **OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False } |
