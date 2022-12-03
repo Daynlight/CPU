@@ -22,6 +22,7 @@
 * wai -> Wait for keyboard input.
 * dsc (<kbd>Register</kbd>) -> Jump to Disk in Register. **Need set location for disk before jump**.
 * sav -> Save Data to Disk. **Location = Register 1, Data = Register 2, Disk = Register 3**.
+* dat (<kbd>data</kbd>) (<kbd>data</kbd>) -> just set data
 ## ALU
 0. A
 1. not A
