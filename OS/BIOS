@@ -1,30 +1,57 @@
-pri "Wybierz Dysk: "
+var (0) "0"
+var (4) "0"
+sme (0)
+var (3) "7"
+com
+dat (0) (0)
+get (1)
+var (2) "20"
+var (3) "4"
+com
+var (3) "0"
+var (0) "FB"
+jmp (0)
+pri "Welcome in Bios"
+nel
+pri "Chose Disk: "
 wai
 get (1)
-var (2) "31"
-var (3) "4"
+out (1)
+var (2) "30"
+var (0) "a"
+alu
+prr (3) (2)
+var (1) "2"
+var (3) "0"
+sav
+var (3) "6"
 com
-var (0) "72"
+var (0) "1"
 var (3) "0"
 jmp (0)
-out (1)
-dsc (1)
-var (2) "32"
-var (3) "4"
-com
-var (0) "8D"
-var (3) "0"
-jmp (0)
-out (1)
-dsc (1)
 nel
-pri "Nie ma dysku "
-out (1)
+gme (1)
+var (3) "7"
+com
+var (2) "0"
+var (3) "1"
+com
+var (3) "0"
+var (0) "16D"
+jmp (0)
+pri "Os loading"
+var (3) "6"
+com
+var (4) "0"
+gme (3)
+var (0) "0"
+jmp (0)
+dsc (3)
+pri "Chose Boot disk"
 nel
 var (3) "6"
 com
-var (0) "0"
 var (3) "0"
+var (0) "1"
+wai
 jmp (0)
-
- 

@@ -241,12 +241,40 @@ for L in L:
         f.write(w)
         w=""
         f.close
+    if(L[0:3]=="dat"): # only 1 bit - Save on DISK R3 = DISK R2 = DATA R1 = Location
+        ia=0
+        r=L[5]
+        a=L[9]
+        c=["0",r,a]
+        jmpa=jmpa+1
+        while(ia<len(c)):
+            w=w+ str(c[ia])+" "
+            ia=ia+1
+            b=b+1
+            if(b>endline):
+                w=w+"\n"
+                b=1
+        f=open(x+"asm","a")
+        f.write(w)
+        w=""
+        f.close
+    if(L[0:3]=="end"): # only 1 bit - Save on DISK R3 = DISK R2 = DATA R1 = Location
+        ia=0
 
-
+        c=["f","0",""]
+        jmpa=jmpa+1
+        while(ia<len(c)):
+            w=w+ str(c[ia])+" "
+            ia=ia+1
+            b=b+1
+            if(b>endline):
+                w=w+"\n"
+                b=1
+        f=open(x+"asm","a")
+        f.write(w)
+        w=""
+        f.close
 
 print("Wielkość danych = "+str(jmpa))
-w= "f "
-f=open(x+"asm","a")
-f.write(w)
-f.close
+
 input("END")
