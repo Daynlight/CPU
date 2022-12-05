@@ -8,8 +8,8 @@ f=open(x+"asm","w")
 f.writelines(w)
 f.close
 w=""
-b=1
 endline=8
+b=1
 jmpa=0
 for L in L:
     if(L[0:3]=="pri"): 
