@@ -24,6 +24,7 @@
 * sav -> save data on disck, R3=Disck, R2=Data, R1=location
 * dat -> set data on dick, placeholder, no register is used
 * end -> end program
+* gto -> start write program for mmu location
 ## ALU
 0. A
 1. not A

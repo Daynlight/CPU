@@ -94,6 +94,7 @@ for L in L:
         mmui=mmui+1
         da=""
         jmpa=jmpa+3
+    if(L[0:3]=="gto"): # go to program
         w=""
         i=5
         while(L[i]!='"'):
