@@ -7,21 +7,23 @@
 * 2 DISKS and 1 BIOS
 * 3 jumps per operation
 ## Asembler
-* pri "<kbd>text to print in terminal</kbd>" -> Print text.
-* nel -> Go to next line.
-* var (<kbd>Register</kbd>) "<kbd>Data</kbd>" -> Set the register to the given data.
-* prr (<kbd>From the registry</kbd>) (<kbd>To the register</kbd>) -> Transfers data from a register to another register.
-* out (<kbd>Register</kbd>) -> Print data from register in terminal.
-* get (<kbd>Register</kbd>) -> Get data from keyboard to register.
-* sme (<kbd>Register</kbd>) -> Save Data from register to RAM Memory. **Memory location = Register 4**.
-* gme (<kbd>Register</kbd>) -> Get Data from RAM Memory to register. **Memory location = Register 4**.
-* alu -> Do the arithmetic calculations. **OP = Register 0, A = Register 1, B = Register 2, Result = Register 3**.
-* com -> Compare numbers. **A = Register 1, B = Register 2, OP = Register 3**. **OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False }**.
-* wai -> Wait for keyboard input.
-* dsc (<kbd>Register</kbd>) -> Jump to Disk in Register. **Need set location for disk before jump**.
-* sav -> Save Data to Disk. **Location = Register 1, Data = Register 2, Disk = Register 3**.
-* dat (<kbd>data</kbd>) (<kbd>data</kbd>) -> just set data
-* end -> stop program.
+* mmu -> R1=location, R2=content, Need by set before jmp, location +1
+* var -> Set <kbd>register</kbd> on <kbd>Data</kbd>
+* jmp -> R3=Disck to jmp, R1 mmu loation, Need compart 1
+* pri -> print <kbd>Text</kbd>
+* nel -> go to next line
+* prr -> copy from <kbd>Register</kbd> to <kbd>Register</kbd>
+* out -> out data from <kbd>Register</kbd>
+* get -> get data to <kbd>Register</kbd>
+* sme -> save in RAM from <kbd>Register</kbd>, R4=location
+* gme -> get from RAM to <kbd>Register</kbd>, R4=location
+* com -> Compart, A = Register 1, B = Register 2, OP = Register 3 OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False }
+* alu -> OP = Register 0, A = Register 1, B = Register 2, Result = Register 3
+* wai -> Wait for input
+* dsc -> go to dick from <kbd>Register</kbd>, need set location to jmp before
+* sav -> save data on disck, R3=Disck, R2=Data, R1=location
+* dat -> set data on dick, placeholder, no register is used
+* end -> end program
 ## ALU
 0. A
 1. not A
