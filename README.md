@@ -52,7 +52,7 @@
 | GET | 5 | R |  |  |
 | OUT | 6 | R |  |  |
 | R -> R | 7 | R(from) | R(to) |  |
-| R -> Rom | 8 |  |  | |
+| R -> Rom | 8 |  |  |R3=Disck, R2=Data, R1=location |
 | NULL | 9 |  |  |  |
 | WAIT | A |  |  |  |
 | COMPARE | B |  |  | A = Register 1, B = Register 2, OP = Register 3**. **OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False } |
