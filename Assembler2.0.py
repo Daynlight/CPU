@@ -273,7 +273,7 @@ for L in L:
         d[mmui]=w
         mmui=mmui+1
         w=""
-    if(L[0:3]=="end"): # Compart, A = Register 1, B = Register 2, OP = Register 3 OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False }
+    if(L[0:3]=="end"): # end program
         w=""
         ia=0
         b=0
