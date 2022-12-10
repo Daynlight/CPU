@@ -2,7 +2,7 @@
 ## Informatino
 * RISC
 * 32 bit data
-* 4 bit op
+* 3 bit op
 * Register (0-4)
 * 2 DISKS and 1 BIOS
 * 3 jumps per operation
