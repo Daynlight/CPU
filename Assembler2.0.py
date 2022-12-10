@@ -1,3 +1,7 @@
+import pyfiglet
+print(pyfiglet.figlet_format("ASSEMBLER V2.0"))
+input("Start press ANY KEY")
+
 #-------------------------Create File-----------------------------#
 x=input("File: ")
 f=open(x,'r')
@@ -12,9 +16,9 @@ l=0
 b=1
 jmpa=0
 mmui=1
-#---------------------------To SeT-----------------------------#
-Sizebite=3000
 endline=3
+#---------------------------To SeT-----------------------------#
+Sizebite=int(input("How many opartions? "))
 #---------------------------Create default data----------------------------#
 d=['v2.0 raw']
 listcreate=1
@@ -293,3 +297,4 @@ while count<=Sizebite:
 print(a)
 print("DATA: "+str(Sizebite*3)+" b")
 print(d)
+print("END")
