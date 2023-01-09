@@ -61,3 +61,6 @@
 | Change Disk | D | R |  | go to dick from register, need set location to jmp before |
 | D - > R | E | R | D | Set register |
 | STOP | F |  |  | end program |
+<hr>
+🛠️Tools:<br>
+<a href = https://www.python.org/><img width = "40px" src = https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg ></a>
