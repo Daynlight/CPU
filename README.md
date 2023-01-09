@@ -61,6 +61,6 @@
 | Change Disk | D | R |  | go to dick from register, need set location to jmp before |
 | D - > R | E | R | D | Set register |
 | STOP | F |  |  | end program |
-### 🛠️Tools:
+## 🛠️Tools:
 <a href = https://www.python.org/><img width = "40px" src = https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg ></a>
 <a href = https://logisim.en.softonic.com/><img width = "40px" src = https://upload.wikimedia.org/wikipedia/commons/b/ba/Logisim-icon.svg ></a>
