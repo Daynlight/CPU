@@ -1,37 +1,37 @@
-<div align=center><h1>CPU DIAGRAM IN LOGISIM AND ASEMBLER</h1></div>
+<div align=center><h1>✨CPU DIAGRAM IN LOGISIM AND ASEMBLER✨</h1></div>
 <div align=center>
   <p>This Repository contains a working cpu diagram designed by Daynlight and working asembler writed in python.</p>
 </div>
-<div align=center><h2>Base Information about CPU Diagram</h2>
+<div align=center><h2>🎈Base Information about CPU Diagram🎈</h2>
 RISC Architecture<br>
 32 bit Data Line<br>
 3 bit Operation Step<br>
 4 Registers (0-4)<br>
 2 DISCS and 1 BIOS<br>
 </div>
+<div align=center><h2>💎Usage💎</h2></h2>
 
-<div align=center><h2>Asembler Operations codes</h2>
+<div align=center><h2>📃Asembler Operations codes📃</h2>
 
 | Code | What do | Structure | ! |
 |------|---------|-----------|---|
-| mmu | Set MMU locations on disk to jump there for example when you use loop. | mmu (<kbd>Place on Disk in Hex</kbd>) | You need set R1=<kbd>Location</kbd> and R2=<kbd>Content</kbd> before you jmp, Location need by increment by one |
-| jmp | Jump to MMU location | jmp | You need set Register 3 on <kbd>Disk</kbd> and Register 1 on <kbd>MMU ID</kbd> where is location before you Jump |
-| var | Set Data on Register | var (<kbd>Register</kbd>) "<kbd>Data</kbd>" | |
-| pri | Print text in terminal | pri "<kbd>Text</kbd>" | |
-| nel | Go to next line | nel | |
-| prr | Copy Data from one Register and paste data in another | prr (<kbd>Register</kbd>) (<kbd>Register</kbd>) | |
-* out -> out data from <kbd>Register</kbd> and display on tty
-* get -> get data to <kbd>Register</kbd>
-* sme -> save in RAM from <kbd>Register</kbd>, R4=location
-* gme -> get from RAM to <kbd>Register</kbd>, R4=location
-* com -> Compart, A = Register 1, B = Register 2, OP = Register 3 OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False }
-* alu -> OP = Register 0, A = Register 1, B = Register 2, Result = Register 3
-* wai -> Wait for input
-* dsc -> go to dick from <kbd>Register</kbd>, need set location to jmp before
-* sav -> save data on disck, R3=Disck, R2=Data, R1=location
-* dat -> set data on dick, placeholder, no register is used
-* end -> end program
-* gto -> start write program for mmu location
+| mmu | Set MMU locations on disk to jump there for example when you use loop. | mmu (<kbd>Place on Disk in Hex</kbd>) | Register 1 = MMU ID</br> Register 2 = Disk Location</br> !Location need by increment by one! |
+| gto | Fill Spaces betwaen MMU aplications | gto "<kbd>Place on Disck in Hex</kbd>" | |
+| jmp | Jump to MMU location. | jmp | Register 3 = Disk</br> Register 1 = MMU ID</br> !Compare need be set on true condition! |
+| var | Set Data on Register. | var (<kbd>Register</kbd>) "<kbd>Data</kbd>" | |
+| pri | Print text in terminal. | pri "<kbd>Text</kbd>" | |
+| nel | Go to next line. | nel | |
+| prr | Copy Data from one Register and paste data in another. | prr (<kbd>Register</kbd>) (<kbd>Register</kbd>) | |
+| out | Display Data from Register. | out (<kbd>Register</kbd>) | |
+| get | Get Data From Input and save in register. | get (<kbd>Register</kbd>) | |
+| sme | Save data from Register in RAM. | sme (<kbd>Register</kbd>) | RAM Location = Register 4 |
+| gme | Get Data From RAM and save in Register. | gme (<kbd>Register</kbd>)| RAM Location = Register 4 |
+| com | Compare two datas. | com | A = Register 1</br> B = Register 2</br> OP = Register 3</br> Avaible Operations:</br> 0 -> ></br> 1 -> =</br> 2 -> <</br> 3 -> <=</br> 4 -> !=</br> 5 -> >=</br> 6 -> True</br> 7 -> False |
+| alu | Make ALU operations. | alu | OP = Register 0</br> A = Register 1</br> B = Register 2</br> Result = Register 3 |
+| wai | Wait for input. | wai | |
+| dsc | Go to Disk from Register. | dsc (<kbd>Register</kbd>) | You need set Jump before you go to Disck |
+| sav | Save data on disck. | sav | Disck = Register 3</br> Data = Register 2</br> Location = Register 1</br> |
+| end | End Program| end | |
 </div>
   
 ## ALU
