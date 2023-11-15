@@ -9,8 +9,16 @@ RISC Architecture<br>
 4 Registers (0-4)<br>
 2 DISCS and 1 BIOS<br>
 </div>
-<div align=center><h2>💎Usage💎</h2></h2>
-
+<div align=center><h2>💎Usage💎</h2>
+I. Download Repository.</br>
+II. Download Java <a href="https://www.java.com/en/download/">Java</a></br>
+III. Go to <b>APP Folder</b></br>
+IV. Run <b>logisim-win-2.7.1.exe</b></br>
+V. Open File and load <b>CPU.circ</b></br>
+VI. Load Images from <b>OS Folder</b> to Bios and Disk<br>
+VII. Have Fun <3</br>
+<img src="https://media.tenor.com/qCbx8Zp1LnIAAAAd/anime-anime-funny.gif">
+</div>
 <div align=center><h2>📃Asembler Operations codes📃</h2>
 
 | Code | What do | Structure | ! |
@@ -33,43 +41,45 @@ RISC Architecture<br>
 | sav | Save data on disck. | sav | Disck = Register 3</br> Data = Register 2</br> Location = Register 1</br> |
 | end | End Program| end | |
 </div>
-  
-## ALU
-0. A
-1. not A
-2. AND
-3. OR
-4. XOR
-5. NAND
-6. NOR
-7. ff
-8. 00
-9. ADD
-10. Sub
-11. Mult
-12. Devider
-13. Random
-14.
-15.
-## OP TABLE
+<div align=center><h2>💻ALU Operations💻</h2></div>
+<div width=20px align=center>0. A</div>
+<div width=20px align=center>1. not A</div>
+<div width=20px align=center>2. AND</div>
+<div width=20px align=center>3. OR</div>
+<div width=20px align=center>4. XOR</div>
+<div width=20px align=center>5. NAND</div>
+<div width=20px align=center>6. NOR</div>
+<div width=20px align=center>7. ff</div>
+<div width=20px align=center>8. 00</div>
+<div width=20px align=center>9. ADD</div>
+<div width=20px align=center>10. Sub</div>
+<div width=20px align=center>11. Mult</div>
+<div width=20px align=center>12. Devider</div>
+<div width=20px align=center>13. Random</div>
+<div width=20px align=center>14.</div>
+<div width=20px align=center>15.</div>
+<div align=center><h2>🗻OP Table🗻</h2>
+
 | DESCRIPTION | OP | R | R | More Info|
 | :---- | :----: | :----: | :----: | ----: |
 | NULL | 0 |  |  | Do nothing |
-| R -> M | 1 | R |  | Save in RAM, R4=location |
-| M -> R | 2 | R |  | Get from RAM, R4=location |
-| JMP | 3 | R |  | R3=Disck to jmp, R1 mmu loation, Need compart 1 |
-| ALU | 4 |  |  | OP = Register 0, A = Register 1, B = Register 2, Result = Register 3 |
+| R -> M | 1 | R |  | Save in RAM</br> R4=location |
+| M -> R | 2 | R |  | Get from RAM</br> R4=location |
+| JMP | 3 | R |  | R3=Disck to jmp</br> R1 mmu loation</br> Need compart 1 |
+| ALU | 4 |  |  | OP = Register 0</br> A = Register 1</br> B = Register 2</br> Result = Register 3 |
 | GET | 5 | R |  | get data to register |
 | OUT | 6 | R |  | out data from register and display on tty |
 | R -> R | 7 | R(from) | R(to) | copy from register to register |
-| R -> Rom | 8 |  |  | save data on disck, R3=Disck, R2=Data, R1=location |
+| R -> Rom | 8 |  |  | Save data on disck</br> R3=Disck</br> R2=Data</br> R1=location |
 | NULL | 9 |  |  |  |
 | WAIT | A |  |  | Wait for input |
-| COMPARE | B |  |  | Compart, A = Register 1, B = Register 2, OP = Register 3 OP = { 0 - >, 1 - =, 2 - <, 3 - <=, 4 - !=, 5 - >=, 6 - True, 7 - False } |
-| MMU | C |  |  | R1=location, R2=content, Need by set before jmp, location +1 |
-| Change Disk | D | R |  | go to dick from register, need set location to jmp before |
+| COMPARE | B |  |  | Compart</br> A = Register 1</br> B = Register 2</br> OP = Register 3</br> Operations:</br> 0 - ></br> 1 -> =</br> 2 -> <</br> 3 -> <=</br> 4 -> !=</br> 5 -> >=</br> 6 -> True</br> 7 -> False |
+| MMU | C |  |  | R1=location</br> R2=content</br> Need by set before jmp</br> location +1 |
+| Change Disk | D | R |  | go to dick from register</br> need set location to jmp before |
 | D - > R | E | R | D | Set register |
 | STOP | F |  |  | end program |
-## 🛠️Tools:
+</div>
+<div align=center><h2>🛠️Tools🛠️</h2>
 <a href = https://www.python.org/><img width = "40px" src = https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg ></a>
 <a href = https://logisim.en.softonic.com/><img width = "40px" src = https://upload.wikimedia.org/wikipedia/commons/b/ba/Logisim-icon.svg ></a>
+</div>
