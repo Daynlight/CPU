@@ -1,8 +1,5 @@
 <div align=center><h1>✨CPU DIAGRAM IN LOGISIM AND ASEMBLER✨</h1>
 <img  src="https://github.com/Daynlight/CPU/blob/1.0/Assets/CPU%20Diagram.jpg"></div>
-<div align=center>
-  <p>This Repository contains a working cpu diagram designed by Daynlight and working asembler writed in python.</p>
-</div>
 <div align=center><h2>🎈Base Information about CPU Diagram🎈</h2>
 RISC Architecture<br>
 32 bit Data Line<br>
