@@ -1,18 +1,25 @@
-# CPU In Logisim
-## Informatino
-* RISC
-* 32 bit data
-* 3 bit op
-* Register (0-4)
-* 2 DISKS and 1 BIOS
-* 3 jumps per operation
-## Asembler
-* mmu -> R1=location, R2=content, Need by set before jmp, location +1
-* var -> Set <kbd>register</kbd> on <kbd>Data</kbd>
-* jmp -> R3=Disck to jmp, R1 mmu loation, Need compart 1
-* pri -> print <kbd>Text</kbd>
-* nel -> go to next line
-* prr -> copy from <kbd>Register</kbd> to <kbd>Register</kbd>
+<div align=center><h1>CPU DIAGRAM IN LOGISIM AND ASEMBLER</h1></div>
+<div align=center>
+  <p>This Repository contains a working cpu diagram designed by Daynlight and working asembler writed in python.</p>
+</div>
+<div align=center><h2>Base Information about CPU Diagram</h2>
+RISC Architecture<br>
+32 bit Data Line<br>
+3 bit Operation Step<br>
+4 Registers (0-4)<br>
+2 DISCS and 1 BIOS<br>
+</div>
+
+<div align=center><h2>Asembler Operations codes</h2>
+
+| Code | What do | Structure | ! |
+|------|---------|-----------|---|
+| mmu | Set MMU locations on disk to jump there for example when you use loop. | mmu (<kbd>Place on Disk in Hex</kbd>) | You need set R1=<kbd>Location</kbd> and R2=<kbd>Content</kbd> before you jmp, Location need by increment by one |
+| jmp | Jump to MMU location | jmp | You need set Register 3 on <kbd>Disk</kbd> and Register 1 on <kbd>MMU ID</kbd> where is location before you Jump |
+| var | Set Data on Register | var (<kbd>Register</kbd>) "<kbd>Data</kbd>" | |
+| pri | Print text in terminal | pri "<kbd>Text</kbd>" | |
+| nel | Go to next line | nel | |
+| prr | Copy Data from one Register and paste data in another | prr (<kbd>Register</kbd>) (<kbd>Register</kbd>) | |
 * out -> out data from <kbd>Register</kbd> and display on tty
 * get -> get data to <kbd>Register</kbd>
 * sme -> save in RAM from <kbd>Register</kbd>, R4=location
@@ -25,6 +32,8 @@
 * dat -> set data on dick, placeholder, no register is used
 * end -> end program
 * gto -> start write program for mmu location
+</div>
+  
 ## ALU
 0. A
 1. not A
