@@ -5,7 +5,7 @@ RISC Architecture<br>
 32 bit Data Line<br>
 3 bit Operation Step<br>
 4 Registers (0-4)<br>
-2 DISCS and 1 BIOS<br>
+2 DISCKS and 1 BIOS<br>
 </div>
 <div align=center><h2>💎Usage💎</h2>
 I. Download Repository.</br>
