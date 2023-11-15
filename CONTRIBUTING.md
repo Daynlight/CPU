@@ -1,1 +1,0 @@
-Everythink do owner
