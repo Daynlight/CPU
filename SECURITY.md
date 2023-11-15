@@ -2,4 +2,4 @@
 
 ## Supported Versions
 
-All Version
+Only newest Version
