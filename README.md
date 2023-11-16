@@ -1,4 +1,4 @@
-<div align=center><img src="https://github.com/Daynlight/CPU/blob/1.0/Assets/CPU%20Diagram.jpg">
+<div align=center>
 <h1>✨CPU ASEMBLER AND DIAGRAM IN LOGISIM✨</h1></div>
 <div align=center><h2>🎈Base Information about CPU Diagram🎈</h2>
 RISC Architecture<br>
