@@ -1,20 +1,18 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+title: '[Feature]'
+labels: feature
+assignees: Kokomichrzan
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+<div align=center>
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Title</br>
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Description</br>
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+Thanks <3</br>
+<img height=50px src="https://github.com/Kokomichrzan/Kokomichrzan-Repo-Template/blob/main/Assets/Happy.gif"></img>
+</div>
