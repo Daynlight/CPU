@@ -1,6 +1,7 @@
 <div align=center>
-<h1>✨CPU ASEMBLER AND DIAGRAM IN LOGISIM✨</h1></div>
+<h1>✨CPU ASEMBLER AND DIAGRAM IN LOGISIM✨</h1>
 This is my cpu diagram and assembler created for learning purposes.
+</div>
 <div align=center><h2>🎈Base Information about CPU Diagram🎈</h2>
 RISC Architecture<br>
 32 bit Data Line<br>
