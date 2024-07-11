@@ -10,7 +10,7 @@ RISC Architecture<br>
 2 DISCKS and 1 BIOS<br>
 </div>
 <div align=center><h2>💎Usage💎</h2>
-I. Download Repository <b>From Branch</b>.</br>
+I. Download Repository <b>From Release Branch</b>.</br>
 II. Download Java <a href="https://www.java.com/en/download/">Java</a></br>
 III. Go to <b>APP Folder</b></br>
 IV. Run <b>logisim-win-2.7.1.exe</b></br>
