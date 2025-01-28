@@ -17,7 +17,6 @@ IV. Run <b>logisim-win-2.7.1.exe</b></br>
 V. Open File and load <b>CPU.circ</b></br>
 VI. Load Images from <b>OS Folder</b> to Bios and Disk<br>
 VII. Have Fun <3</br>
-<img src="https://media.tenor.com/qCbx8Zp1LnIAAAAd/anime-anime-funny.gif">
 </div>
 <div align=center><h2>📃Asembler Operations codes📃</h2>
 
