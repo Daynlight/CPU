@@ -2,6 +2,38 @@
 <h1>CPU ASEMBLER AND DIAGRAM IN LOGISIM</h1>
 This is my cpu diagram and assembler created for learning purposes.
 </div>
+
+
+
+
+<div>
+<h2>Screenshots</h2>
+<table>
+  <td align="center">
+    <a href="docs/cpu 1.png">
+      <img src="docs/cpu 1.png" /><br>
+    </a>
+  </td>
+</table>
+<table>
+  <tr>
+    <td align="center">
+      <a href="docs/cpu 2.png">
+        <img src="docs/cpu 2.png" /><br>
+      </a>
+    </td>
+    <td align="center">
+      <a href="docs/cpu 3.png">
+        <img src="docs/cpu 3.png" /><br>
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+
+
 <div align=center><h2>Base Information about CPU Diagram</h2>
 RISC Architecture<br>
 32 bit Data Line<br>
@@ -18,6 +50,9 @@ V. Open File and load <b>CPU.circ</b></br>
 VI. Load Images from <b>OS Folder</b> to Bios and Disk<br>
 VII. Have Fun <3</br>
 </div>
+
+
+
 <div align=center><h2>Asembler Operations codes</h2>
 
 | Code | What do | Structure | ! |
@@ -40,6 +75,10 @@ VII. Have Fun <3</br>
 | sav | Save data on disck. | sav | Disck = Register 3</br> Data = Register 2</br> Location = Register 1</br> |
 | end | End Program| end | |
 </div>
+
+
+
+
 <div align=center><h2>ALU Operations</h2></div>
 <div width=20px align=center>0. A</div>
 <div width=20px align=center>1. not A</div>
@@ -57,6 +96,10 @@ VII. Have Fun <3</br>
 <div width=20px align=center>13. Random</div>
 <div width=20px align=center>14.</div>
 <div width=20px align=center>15.</div>
+
+
+
+
 <div align=center><h2>OP Table</h2>
 
 | DESCRIPTION | OP | R | R | More Info|
