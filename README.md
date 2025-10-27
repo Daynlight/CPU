@@ -48,7 +48,6 @@ III. Go to <b>APP Folder</b></br>
 IV. Run <b>logisim-win-2.7.1.exe</b></br>
 V. Open File and load <b>CPU.circ</b></br>
 VI. Load Images from <b>OS Folder</b> to Bios and Disk<br>
-VII. Have Fun <3</br>
 </div>
 
 
