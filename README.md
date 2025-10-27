@@ -1,15 +1,15 @@
 <div align=center>
-<h1>✨CPU ASEMBLER AND DIAGRAM IN LOGISIM✨</h1>
+<h1>CPU ASEMBLER AND DIAGRAM IN LOGISIM</h1>
 This is my cpu diagram and assembler created for learning purposes.
 </div>
-<div align=center><h2>🎈Base Information about CPU Diagram🎈</h2>
+<div align=center><h2>Base Information about CPU Diagram</h2>
 RISC Architecture<br>
 32 bit Data Line<br>
 3 bit Operation Step<br>
 4 Registers (0-4)<br>
 2 DISCKS and 1 BIOS<br>
 </div>
-<div align=center><h2>💎Usage💎</h2>
+<div align=center><h2>Usage</h2>
 I. Download Repository <b>From Release Branch</b>.</br>
 II. Download Java <a href="https://www.java.com/en/download/">Java</a></br>
 III. Go to <b>APP Folder</b></br>
@@ -18,7 +18,7 @@ V. Open File and load <b>CPU.circ</b></br>
 VI. Load Images from <b>OS Folder</b> to Bios and Disk<br>
 VII. Have Fun <3</br>
 </div>
-<div align=center><h2>📃Asembler Operations codes📃</h2>
+<div align=center><h2>Asembler Operations codes</h2>
 
 | Code | What do | Structure | ! |
 |------|---------|-----------|---|
@@ -40,7 +40,7 @@ VII. Have Fun <3</br>
 | sav | Save data on disck. | sav | Disck = Register 3</br> Data = Register 2</br> Location = Register 1</br> |
 | end | End Program| end | |
 </div>
-<div align=center><h2>💻ALU Operations💻</h2></div>
+<div align=center><h2>ALU Operations</h2></div>
 <div width=20px align=center>0. A</div>
 <div width=20px align=center>1. not A</div>
 <div width=20px align=center>2. AND</div>
@@ -57,7 +57,7 @@ VII. Have Fun <3</br>
 <div width=20px align=center>13. Random</div>
 <div width=20px align=center>14.</div>
 <div width=20px align=center>15.</div>
-<div align=center><h2>🗻OP Table🗻</h2>
+<div align=center><h2>OP Table</h2>
 
 | DESCRIPTION | OP | R | R | More Info|
 | :---- | :----: | :----: | :----: | ----: |
@@ -78,7 +78,7 @@ VII. Have Fun <3</br>
 | D - > R | E | R | D | Set register |
 | STOP | F |  |  | end program |
 </div>
-<div align=center><h2>🛠️Tools🛠️</h2>
+<div align=center><h2>Tools</h2>
 <a href = https://www.python.org/><img width = "40px" src = https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg ></a>
 <a href = https://logisim.en.softonic.com/><img width = "40px" src = https://upload.wikimedia.org/wikipedia/commons/b/ba/Logisim-icon.svg ></a>
 </div>
